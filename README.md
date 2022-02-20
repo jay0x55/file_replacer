@@ -2,6 +2,8 @@
 
 this script can replace your files text but the whole folder which means all files in a Folder
 
+**you can set allowed extentions: like html, txt, ... in `wd.py`**
+
 what u need:
 
 - config file
@@ -21,3 +23,4 @@ also u can check `example_conf.txt` and `test` directory to check how config wor
 
 ### thats it
 it's just for fun hope u enjoy it
+
