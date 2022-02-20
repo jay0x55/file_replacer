@@ -10,12 +10,13 @@ def yup(damn, c):
 
 
 def replace(dr, par):
+    allowed_exts = ['html', 'txt']
     for i in os.listdir(dr):
         path = dr + "/" + i
         if os.path.isdir(path):
             replace(path, par)
             continue
-        if path.split(".")[-1] != "html":
+        if path.split(".")[-1] not in allowed_exts:
             continue
         with open(path, "r", encoding="utf-8") as content:
             href = yup(content.read(), par)
